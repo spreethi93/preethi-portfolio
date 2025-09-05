@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { Code, Database, Gauge, Building, Wrench, Palette, Users } from "lucide-react"
 import { skills } from "@/data/portfolio"
+import { RotatingSkills } from "@/components/ui/rotating-skills"
 
 const skillIcons = {
   "Frontend Web Technologies": Code,
@@ -31,6 +32,17 @@ export function Skills() {
           <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
             A comprehensive toolkit built over 9+ years of frontend engineering experience
           </p>
+        </motion.div>
+
+        {/* Rotating Skills Canvas */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="mb-16"
+        >
+          <RotatingSkills />
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

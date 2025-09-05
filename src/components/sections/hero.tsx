@@ -29,11 +29,15 @@ export function Hero() {
             transition={{ duration: 0.8 }}
             className="mb-8"
           >
-            {/* Clean profile photo */}
+            {/* Profile photo */}
             <div className="relative w-32 h-32 mx-auto mb-8">
               <div className="w-full h-full rounded-full bg-gradient-to-br from-blue-400 to-purple-500 p-1">
-                <div className="w-full h-full rounded-full bg-white dark:bg-slate-800 flex items-center justify-center">
-                  <div className="text-4xl">👩‍💻</div>
+                <div className="w-full h-full rounded-full overflow-hidden bg-white dark:bg-slate-800">
+                  <img 
+                    src="/assets/images/preethi-sathiyanarayanan.jpg"
+                    alt="Preethi Sathiyanarayanan"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </div>

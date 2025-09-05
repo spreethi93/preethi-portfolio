@@ -41,8 +41,16 @@ export function Experience() {
               <div className="flex gap-6">
                 {/* Company logo */}
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 rounded-full bg-white dark:bg-slate-800 border-4 border-blue-200 dark:border-blue-800 flex items-center justify-center relative z-10 shadow-lg">
-                    <Building2 className="h-8 w-8 text-blue-600 dark:text-blue-400" />
+                  <div className="w-16 h-16 rounded-full bg-white dark:bg-slate-800 border-4 border-blue-200 dark:border-blue-800 flex items-center justify-center relative z-10 shadow-lg overflow-hidden">
+                    {experience.logo ? (
+                      <img 
+                        src={experience.logo} 
+                        alt={`${experience.company} logo`}
+                        className="w-10 h-10 object-contain"
+                      />
+                    ) : (
+                      <Building2 className="h-8 w-8 text-blue-600 dark:text-blue-400" />
+                    )}
                   </div>
                 </div>
 
