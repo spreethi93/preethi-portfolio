@@ -304,3 +304,7 @@ html {
   transform: translateZ(0);
   will-change: transform;
 }
+
+.bg-gradient-radial {
+  background: radial-gradient(circle, var(--tw-gradient-stops));
+}

@@ -53,12 +53,17 @@ export interface PersonalInfo {
   resumeUrl: string;
 }
 
+export interface Skill {
+  name: string;
+  svg?: string;
+}
+
 export interface Skills {
-  "Frontend Web Technologies": string[];
-  "Backend & APIs": string[];
-  "Performance & Monitoring": string[];
-  "Architecture/Strategy": string[];
-  "DevOps & Tooling": string[];
-  "Design & Collaboration": string[];
-  "Leadership": string[];
+  "Frontend Web Technologies": Skill[];
+  "Backend & APIs": Skill[];
+  "Performance & Monitoring": Skill[];
+  "Architecture/Strategy": Skill[];
+  "DevOps & Tooling": Skill[];
+  "Design & Collaboration": Skill[];
+  "Leadership": Skill[];
 }

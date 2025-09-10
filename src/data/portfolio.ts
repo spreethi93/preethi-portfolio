@@ -11,35 +11,73 @@ import {
 
 export const personalInfo: PersonalInfo = {
   name: "Preethi Sathiyanarayanan",
-  title: "Lead Frontend Engineer",
+  title: "Lead Software Engineer",
   summary: "Frontend Technical Lead with 9+ years of experience architecting scalable, accessible (WCAG 2.1), highly performant & user-centric web applications using modern technologies to solve enterprise-level SaaS product(B2C, B2B) needs. Proven expertise in React (v18), TypeScript, modular architecture, and micro-frontends. Strategic problem-solver with strong mentoring, business goal alignment, and stakeholder collaboration across cross-functional teams. Experienced in performance optimisation, CI/CD integration, and leading technical transformations. Looking to drive frontend excellence in an innovative product environment.",
-  photo: "../assets/images/preethi-sathiyanarayanan.jpeg",
+  photo: "/assets/images/preethi-sathiyanarayanan.jpg",
   resumeUrl: "/resume.pdf"
 }
 
 export const skills: Skills = {
   "Frontend Web Technologies": [
-    "HTML5", "CSS3", "JavaScript", "TypeScript", "React", "Ember", "Next.js", "TailwindCSS", "Storybook", "Tailwind CSS"
+    { name: "HTML5", svg: "html-5.svg" },
+    { name: "CSS3", svg: "css-3.svg" },
+    { name: "JavaScript", svg: "javascript.svg" },
+    { name: "TypeScript", svg: "typescript.svg" },
+    { name: "React", svg: "react.svg" },
+    { name: "Ember", svg: "ember.svg" },
+    { name: "Next.js", svg: "next-js.svg" },
+    { name: "Storybook", svg: "storybook.svg" },
+    { name: "Tailwind CSS", svg: "tailwind.svg" },
+    { name: "RTL" }
   ],
   "Backend & APIs": [
-    "Java", "RoR", "Node.js", "REST API", "MySQL"
+    { name: "RoR", svg: "rails.svg" },
+    { name: "Java", svg: "java.svg" },
+    { name: "REST API", svg: "rest-api.svg" },
+    { name: "MySQL", svg: "mysql.svg" }
   ],
   "Performance & Monitoring": [
-    "Lighthouse", "Web Vitals", "Performance Optimization", "Page Speed Optimisation",
-    "Chrome DevTools", "Code Splitting", "Monitoring", "Sentry", "Apdex"
+    { name: "Lighthouse", svg: "lighthouse-svgrepo-com.svg" },
+    { name: "Web Vitals", svg: "monitoring.svg" },
+    { name: "Performance Optimization", svg: "performance-optimisation.svg" },
+    { name: "Page Speed Optimisation", svg: "page-speed-optimisation.svg" },
+    { name: "Chrome DevTools", svg: "chrome-devtools.svg" },
+    { name: "Code Splitting", svg: "code-splitting.svg" },
+    { name: "Monitoring", svg: "monitoring.svg" },
+    { name: "Sentry", svg: "sentry.svg" },
+    { name: "Apdex", svg: "apdex.svg" }
   ],
   "Architecture/Strategy": [
-    "Micro-frontends", "Modular Architecture", "System Design", "Microservices", "Scalable Architecture", 
+    { name: "Micro-frontends", svg: "micro-frontend-architecture.svg" },
+    { name: "Modular Architecture", svg: "modular-components.svg" },
+    { name: "System Design", svg: "design-systems.svg" },
+    { name: "Microservices", svg: "modular-components.svg" },
+    { name: "AI and MCP for FE", svg: "ai.svg" }
   ],
   "DevOps & Tooling": [
-    "CI/CD", "Git", "Jenkins", "GitHub Actions", "Jira", "Vercel"
+    { name: "CI/CD", svg: "jenkins.svg" },
+    { name: "Git", svg: "git.svg" },
+    { name: "GitHub Actions", svg: "github-actions.svg" },
+    { name: "Postman", svg: "postman.svg" },
+    { name: "Vercel", svg: "vercel.svg" },
+    { name: "Jenkins", svg: "jenkins.svg" },
+    { name: "Jira", svg: "jira.svg" }
   ],
   "Design & Collaboration": [
-    "Figma", "Invision", "UI/UX Design", "Accessibility", "Agile/Scrum"
+    { name: "Figma", svg: "figma.svg" },
+    { name: "Invision", svg: "invision.svg" },
+    { name: "UI/UX Design", svg: "ui-ux.svg" },
+    { name: "Accessibility", svg: "accessibility.svg" },
+    { name: "Agile/Scrum", svg: "agile-scrum.svg" }
   ],
   "Leadership": [
-    "Technical Mentoring", "Agile Practices", "Cross-functional Collaboration", "Code Standards", "Project Planning", 
-    "Stakeholder Communication", "Technical Decision Making"
+    { name: "Mentoring", svg: "mentoring.svg" },
+    { name: "Agile Practices", svg: "agile-scrum.svg" },
+    { name: "Cross-functional Collaboration", svg: "cross-functional-collaboration.svg" },
+    { name: "Code Standards", svg: "modular-components.svg" },
+    { name: "Project Planning", svg: "project-planning.svg" },
+    { name: "Stakeholder Communication", svg: "stakeholder-communication.svg" },
+    { name: "Technical Decision Making", svg: "decision-making.svg" }
   ]
 }
 

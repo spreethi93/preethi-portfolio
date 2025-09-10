@@ -62,6 +62,7 @@ const config: Config = {
       animation: {
         "fade-in": "fade-in 0.5s ease-in-out",
         "slide-in": "slide-in 0.5s ease-out",
+        "float": "float 6s ease-in-out infinite",
       },
       keyframes: {
         "fade-in": {
@@ -71,6 +72,10 @@ const config: Config = {
         "slide-in": {
           "0%": { transform: "translateY(20px)", opacity: "0" },
           "100%": { transform: "translateY(0)", opacity: "1" },
+        },
+        "float": {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-20px)" },
         },
       },
     },

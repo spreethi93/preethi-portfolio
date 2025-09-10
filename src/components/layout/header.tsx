@@ -45,29 +45,20 @@ export function Header() {
     >
       <nav className="container">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <div className="flex-shrink-0">
-            <button
-              onClick={() => scrollToSection("#about")}
-              className="text-xl font-bold text-slate-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 flex items-center gap-2 group"
-            >
-              <Sparkles className="h-5 w-5 text-blue-600 dark:text-blue-400 group-hover:animate-spin" />
-              Preethi
-            </button>
-          </div>
-
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+            <div className="ml-10 flex items-baseline gap-x-12">
               {navigation.map((item, index) => (
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="relative text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white px-3 py-2 text-sm font-medium transition-all duration-300 group"
+                  className="relative py-2 px-0 inline-flex text-lg md:text-xl font-semibold bg-clip-text text-transparent bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 transition-all duration-300 group"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  {item.name}
-                  <span className="absolute inset-x-0 bottom-0 h-0.5 bg-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                  <span className="bg-clip-text text-transparent bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 group-hover:brightness-125 group-hover:scale-105 transition-all duration-200">
+                    {item.name}
+                  </span>
+                  <span className="absolute left-0 right-0 -bottom-1 h-1 rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
                 </button>
               ))}
             </div>
@@ -95,14 +86,17 @@ export function Header() {
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+            <div className="px-2 pt-2 pb-3 space-y-2 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
               {navigation.map((item) => (
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white block px-3 py-2 text-base font-medium w-full text-left transition-colors duration-300 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg"
+                  className="block w-full text-left px-4 py-3 text-lg font-semibold bg-clip-text text-transparent bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 transition-all duration-300 rounded-lg group"
                 >
-                  {item.name}
+                  <span className="bg-clip-text text-transparent bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 group-hover:brightness-125 group-hover:scale-105 transition-all duration-200">
+                    {item.name}
+                  </span>
+                  <span className="block h-1 mt-1 rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
                 </button>
               ))}
             </div>
