@@ -28,7 +28,8 @@ export const skills: Skills = {
     { name: "Next.js", svg: "next-js.svg" },
     { name: "Storybook", svg: "storybook.svg" },
     { name: "Tailwind CSS", svg: "tailwind.svg" },
-    { name: "RTL" }
+    { name: "Accessibility", svg: "accessibility.svg" },
+    { name: "RTL", svg: "testing-methodologies.svg" },
   ],
   "Backend & APIs": [
     { name: "RoR", svg: "rails.svg" },
@@ -67,7 +68,6 @@ export const skills: Skills = {
     { name: "Figma", svg: "figma.svg" },
     { name: "Invision", svg: "invision.svg" },
     { name: "UI/UX Design", svg: "ui-ux.svg" },
-    { name: "Accessibility", svg: "accessibility.svg" },
     { name: "Agile/Scrum", svg: "agile-scrum.svg" }
   ],
   "Leadership": [

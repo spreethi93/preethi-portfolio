@@ -98,7 +98,7 @@ export function Hero() {
 
             {/* Content - Right Side */}
             <div className="flex-1 text-center lg:text-left">
-              <div className="flex flex-col gap-8">
+              <div className="flex flex-col gap-6">
                 <motion.div
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -114,7 +114,7 @@ export function Hero() {
                     {personalInfo.title}
                   </h2> */}
                   {/* Animated Subtitles */}
-                  <div className="h-12 ml-2 mt-4">
+                  <div className="ml-2 mt-2">
                     <span className="text-lg md:text-xl text-blue-600 dark:text-white font-bold">
                       {displayText}
                       <span className="animate-pulse">|</span>
@@ -148,7 +148,7 @@ export function Hero() {
                       <div className="text-3xl md:text-4xl font-bold text-blue-400 mb-2">
                         10+
                       </div>
-                      <div className="text-sm text-gray-400">
+                      <div className="text-sm text-slate-400">
                         Years Experience
                       </div>
                     </div>
@@ -183,7 +183,7 @@ export function Hero() {
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.6 }}
-                  className="flex flex-col sm:flex-row gap-4"
+                  className="flex flex-col sm:flex-row gap-6"
                 >
                   <div className="relative inline-block">
                     <div className="absolute -inset-1 rounded-xl bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 opacity-75 pointer-events-none"></div>

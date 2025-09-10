@@ -31,7 +31,7 @@ export function Skills() {
   return (
     <motion.section
       id="skills"
-      className="section min-h-screen relative overflow-hidden"
+      className="section min-h-screen relative overflow-hidden px-32 py-16"
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
@@ -41,8 +41,8 @@ export function Skills() {
       {/* Subtle animated shapes */}
       <div className="absolute top-20 left-20 w-96 h-96 bg-blue-200/20 dark:bg-blue-900/20 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-60 animate-float"></div>
       <div className="absolute bottom-20 right-20 w-80 h-80 bg-purple-200/20 dark:bg-purple-900/20 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-60 animate-float" style={{animationDelay: '2s'}}></div>
-      <div className="container relative z-10 py-16">
-        <div className="relative">
+      <div className="relative z-10 flex justify-center">
+        <div className="w-full">
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-bold">
               <span className="text-gradient">Skills Summary</span>
@@ -66,17 +66,16 @@ export function Skills() {
                   </h3>
                 </div>
                 {/* Skills Grid */}
-                <div className="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="flex flex-wrap gap-3">
                   {skillList.map((skill: Skill) => (
                     <div
                       key={skill.name}
-                      className="relative flex items-center gap-4 p-4 rounded-xl bg-blue-50/70 dark:bg-blue-900/30 shadow-none font-medium text-white text-sm transition-all duration-200 select-none tracking-wide border border-transparent group"
+                      className="flex items-center rounded-xl p-2 bg-gradient-to-br from-blue-400/40 via-purple-400/20 to-pink-400/30"
                     >
-                      <div className="absolute -inset-1 rounded-xl bg-gradient-to-br from-blue-400/40 via-purple-400/30 to-pink-400/30 opacity-40 pointer-events-none"></div>
-                      <div className="relative w-8 h-8 flex items-center justify-center flex-shrink-0 transition-transform group-hover:scale-110">
+                      <div className="flex items-center justify-center flex-shrink-0 transition-transform group-hover:scale-110 pr-2">
                         <SkillIcon skill={skill} />
                       </div>
-                      <span className="relative text-white group-hover:text-blue-200 transition-colors">
+                      <span className="text-white group-hover:text-blue-200 transition-colors">
                         {skill.name}
                       </span>
                     </div>

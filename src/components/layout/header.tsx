@@ -47,7 +47,7 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline gap-x-12">
+            <div className="flex items-baseline gap-x-12">
               {navigation.map((item, index) => (
                 <button
                   key={item.name}

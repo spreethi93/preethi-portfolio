@@ -58,12 +58,6 @@
   --gradient-accent: #06b6d4;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   background-color: var(--background);
@@ -259,9 +253,6 @@ html {
 }
 
 /* Section spacing */
-.section {
-  padding: 5rem 0;
-}
 
 .section-sm {
   padding: 3rem 0;
