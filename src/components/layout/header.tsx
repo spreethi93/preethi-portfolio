@@ -1,15 +1,16 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Menu, X, Sparkles } from "lucide-react"
+import { Menu, X } from "lucide-react"
 import { ThemeToggle } from "@/components/ui/theme-toggle"
 import { cn } from "@/lib/utils"
 
 const navigation = [
   { name: "About", href: "#about" },
   { name: "Skills", href: "#skills" },
+  { name: "Certifications", href: "#certifications" },
   { name: "Experience", href: "#experience" },
-  { name: "Education", href: "#education" },
+  // { name: "Education", href: "#education" },
   { name: "Contact", href: "#contact" },
 ]
 

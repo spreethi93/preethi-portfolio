@@ -31,7 +31,7 @@ export function Skills() {
   return (
     <motion.section
       id="skills"
-      className="section min-h-screen relative overflow-hidden px-32 py-16"
+      className="section min-h-[calc(100vh-4rem)] snap-start relative overflow-hidden px-32 py-16"
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}

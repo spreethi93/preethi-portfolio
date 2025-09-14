@@ -180,7 +180,7 @@ html {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 1.5rem;
+  padding: 0;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
@@ -278,7 +278,7 @@ html {
   }
   
   .modern-card {
-    padding: 1rem;
+    padding: 0;
   }
 }
 

@@ -64,21 +64,21 @@ export const skills: Skills = {
     { name: "Jenkins", svg: "jenkins.svg" },
     { name: "Jira", svg: "jira.svg" }
   ],
-  "Design & Collaboration": [
-    { name: "Figma", svg: "figma.svg" },
-    { name: "Invision", svg: "invision.svg" },
-    { name: "UI/UX Design", svg: "ui-ux.svg" },
-    { name: "Agile/Scrum", svg: "agile-scrum.svg" }
-  ],
-  "Leadership": [
-    { name: "Mentoring", svg: "mentoring.svg" },
-    { name: "Agile Practices", svg: "agile-scrum.svg" },
-    { name: "Cross-functional Collaboration", svg: "cross-functional-collaboration.svg" },
-    { name: "Code Standards", svg: "modular-components.svg" },
-    { name: "Project Planning", svg: "project-planning.svg" },
-    { name: "Stakeholder Communication", svg: "stakeholder-communication.svg" },
-    { name: "Technical Decision Making", svg: "decision-making.svg" }
-  ]
+  // "Design & Collaboration": [
+  //   { name: "Figma", svg: "figma.svg" },
+  //   { name: "Invision", svg: "invision.svg" },
+  //   { name: "UI/UX Design", svg: "ui-ux.svg" },
+  //   { name: "Agile/Scrum", svg: "agile-scrum.svg" }
+  // ],
+  // "Leadership": [
+  //   { name: "Mentoring", svg: "mentoring.svg" },
+  //   { name: "Agile Practices", svg: "agile-scrum.svg" },
+  //   { name: "Cross-functional Collaboration", svg: "cross-functional-collaboration.svg" },
+  //   { name: "Code Standards", svg: "modular-components.svg" },
+  //   { name: "Project Planning", svg: "project-planning.svg" },
+  //   { name: "Stakeholder Communication", svg: "stakeholder-communication.svg" },
+  //   { name: "Technical Decision Making", svg: "decision-making.svg" }
+  // ]
 }
 
 export const experiences: Experience[] = [
@@ -87,6 +87,11 @@ export const experiences: Experience[] = [
     position: "Lead Frontend Engineer,",
     duration: "Jun 2017 - Present",
     location: "Chennai, India",
+    product: "Freshservice",
+    productUrl: "https://www.freshworks.com/products/freshservice/",
+    productCaption: "From Tickets to Transformation",
+    productDescription: "Freshservice unifies IT services, assets, and operations on one intuitive platform, boosting employee support, driving agent productivity, and lowering total cost of ownership.",
+    techStack: ["React", "TypeScript", "JavaScript", "Ember", "MFE architecture", "Accessibility", "Performance Optimization"],
     points: [
       "Architected and led frontend development of Freshservice SPA (67k+ customers) using React, TypeScript, JavaScript, and micro-frontend architecture for modular scalability in a DevSecOps culture.",
       "Mentored 10+ engineers across squads, conducted PR code reviews, and defined application codebase quality by implementing robust CI checks(used every day by 400 engineers) for accessibility (A11y), security benchmarks, linting, unit test coverage(90%), build size monitoring, Storybook documenting, and SVG optimizations etc.",
@@ -106,6 +111,8 @@ export const experiences: Experience[] = [
     position: "Software Engineer - Fullstack",
     duration: "Sep 2015 – Jun 2017",
     location: "Chennai, India",
+    productDescription: "Bounteous is a digital marketing agency that helps businesses grow their revenue through digital marketing.",
+    techStack: ["Ionic", "Angular JS", "Node.js", "Salesforce developer", "Visualforce", "Apex", "JavaScript", "RESTful integrations"],
     points: [
       "Built hybrid apps with Ionic (Angular JS, Node.js) and web apps using Visualforce, Apex, and JavaScript, designing RESTful integrations between Salesforce and external systems while adhering to ISV standards.",
       "Delivered time-sensitive, scalable solutions for multi-time-zone clients, ensuring optimal performance and user experiences.",
@@ -178,7 +185,7 @@ export const education: Education[] = [
 
 export const contactInfo: ContactInfo = {
   email: "preethisathiya229@gmail.com",
-  phone: "++91 - 9003267723",
+  phone: "+91 - 9003267723",
   linkedin: "https://www.linkedin.com/in/preethisathiya",
   github: "https://github.com/spreethi93",
   location: "Chennai, India (Open to relocation)"

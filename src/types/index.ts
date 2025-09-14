@@ -5,6 +5,11 @@ export interface Experience {
   location: string;
   points: string[];
   logo?: string;
+  product?: string;
+  productUrl?: string;
+  productCaption?: string;
+  productDescription?: string;
+  techStack?: string[];
 }
 
 export interface Project {

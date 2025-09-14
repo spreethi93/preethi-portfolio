@@ -30,8 +30,14 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="section">
-      <div className="container">
+    <section id="contact" className="section min-h-[calc(100vh-4rem)] snap-start flex items-center justify-center relative overflow-hidden">
+      {/* Modern background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/30 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900"></div>
+      {/* Subtle animated shapes */}
+      <div className="absolute top-20 left-20 w-96 h-96 bg-blue-200/20 dark:bg-blue-900/20 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-60 animate-float"></div>
+      <div className="absolute bottom-20 right-20 w-80 h-80 bg-purple-200/20 dark:bg-purple-900/20 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-60 animate-float" style={{animationDelay: '2s'}}></div>
+
+      <div className="container relative z-10 px-4 md:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -39,8 +45,8 @@ export function Contact() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900 dark:text-white">
-            Get In Touch
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <span className="text-gradient">Get In Touch</span>
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
             I&apos;m always interested in hearing about new opportunities and exciting projects. Let&apos;s connect!
@@ -61,9 +67,15 @@ export function Contact() {
             
             <div className="space-y-6">
               <div className="flex items-center gap-4">
-                <div className="p-3 rounded-full bg-blue-100 dark:bg-blue-900/30">
-                  <Mail className="h-6 w-6 text-blue-600 dark:text-blue-400" />
-                </div>
+                <span className="relative inline-block">
+                  <span className="absolute -inset-1 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 opacity-80 pointer-events-none"></span>
+                  <span
+                    style={{ padding: "8px 8px" }}
+                    className="relative z-10 p-6 rounded-full bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm shadow-lg flex items-center justify-center"
+                  >
+                    <Mail className="h-5 w-5 text-slate-600 dark:text-slate-300" />
+                  </span>
+                </span>
                 <div>
                   <h4 className="font-semibold text-slate-900 dark:text-white">Email</h4>
                   <a 
@@ -76,9 +88,15 @@ export function Contact() {
               </div>
 
               <div className="flex items-center gap-4">
-                <div className="p-3 rounded-full bg-blue-100 dark:bg-blue-900/30">
-                  <Phone className="h-6 w-6 text-blue-600 dark:text-blue-400" />
-                </div>
+                <span className="relative inline-block">
+                  <span className="absolute -inset-1 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 opacity-80 pointer-events-none"></span>
+                  <span
+                    style={{ padding: "8px 8px" }}
+                    className="relative z-10 p-6 rounded-full bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm shadow-lg flex items-center justify-center"
+                  >
+                    <Phone className="h-5 w-5 text-slate-600 dark:text-slate-300" />
+                  </span>
+                </span>
                 <div>
                   <h4 className="font-semibold text-slate-900 dark:text-white">Phone</h4>
                   <a 
@@ -91,9 +109,15 @@ export function Contact() {
               </div>
 
               <div className="flex items-center gap-4">
-                <div className="p-3 rounded-full bg-blue-100 dark:bg-blue-900/30">
-                  <MapPin className="h-6 w-6 text-blue-600 dark:text-blue-400" />
-                </div>
+                <span className="relative inline-block">
+                  <span className="absolute -inset-1 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 opacity-80 pointer-events-none"></span>
+                  <span
+                    style={{ padding: "8px 8px" }}
+                    className="relative z-10 p-6 rounded-full bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm shadow-lg flex items-center justify-center"
+                  >
+                    <MapPin className="h-5 w-5 text-slate-600 dark:text-slate-300" />
+                  </span>
+                </span>
                 <div>
                   <h4 className="font-semibold text-slate-900 dark:text-white">Location</h4>
                   <p className="text-slate-600 dark:text-slate-400">{contactInfo.location}</p>
@@ -109,26 +133,44 @@ export function Contact() {
                   href={contactInfo.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 rounded-full bg-white dark:bg-slate-800 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                  className="relative inline-block group"
                   aria-label="LinkedIn"
                 >
-                  <Linkedin className="h-6 w-6 text-slate-600 dark:text-slate-300" />
+                  <span className="absolute -inset-1 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 opacity-80 pointer-events-none"></span>
+                  <span
+                    style={{ padding: "8px 8px" }}
+                    className="relative z-10 p-6 rounded-full bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm shadow-lg transition-transform duration-300 transform-gpu group-hover:scale-110 hover:bg-blue-50 dark:hover:bg-blue-900/30 flex items-center justify-center"
+                  >
+                    <Linkedin className="h-5 w-5 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400" />
+                  </span>
                 </a>
                 <a
                   href={contactInfo.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 rounded-full bg-white dark:bg-slate-800 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                  className="relative inline-block group"
                   aria-label="GitHub"
                 >
-                  <Github className="h-6 w-6 text-slate-600 dark:text-slate-300" />
+                  <span className="absolute -inset-1 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 opacity-80 pointer-events-none"></span>
+                  <span
+                    style={{ padding: "8px 8px" }}
+                    className="relative z-10 p-6 rounded-full bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm shadow-lg transition-transform duration-300 transform-gpu group-hover:scale-110 hover:bg-blue-50 dark:hover:bg-blue-900/30 flex items-center justify-center"
+                  >
+                    <Github className="h-5 w-5 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400" />
+                  </span>
                 </a>
                 <a
                   href={`mailto:${contactInfo.email}`}
-                  className="p-3 rounded-full bg-white dark:bg-slate-800 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                  className="relative inline-block group"
                   aria-label="Email"
                 >
-                  <Mail className="h-6 w-6 text-slate-600 dark:text-slate-300" />
+                  <span className="absolute -inset-1 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 opacity-80 pointer-events-none"></span>
+                  <span
+                    style={{ padding: "8px 8px" }}
+                    className="relative z-10 p-6 rounded-full bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm shadow-lg transition-transform duration-300 transform-gpu group-hover:scale-110 hover:bg-blue-50 dark:hover:bg-blue-900/30 flex items-center justify-center"
+                  >
+                    <Mail className="h-5 w-5 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400" />
+                  </span>
                 </a>
               </div>
             </div>
@@ -136,20 +178,19 @@ export function Contact() {
 
           {/* Contact Form */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="modern-card"
+            className="modern-card p-8 md:p-10 rounded-2xl bg-gradient-to-br from-blue-50/70 via-purple-50/40 to-pink-50/40 dark:from-blue-900/30 dark:via-purple-900/20 dark:to-pink-900/20 border border-blue-200/50 dark:border-blue-800/40 shadow-lg transform-gpu"
           >
-            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">
-              Send a Message
-            </h3>
-            
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6 bg-white/80 dark:bg-slate-900/50 rounded-xl p-6 md:p-8">
+              <h3 className="text-2xl font-bold text-slate-900 dark:text-white text-center mb-6">
+                Send a Message
+              </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium text-white mb-2">
                     Name *
                   </label>
                   <input
@@ -165,7 +206,7 @@ export function Contact() {
                 </div>
                 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-white mb-2">
                     Email *
                   </label>
                   <input
@@ -182,7 +223,7 @@ export function Contact() {
               </div>
 
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+                <label htmlFor="subject" className="block text-sm font-medium text-white mb-2">
                   Subject *
                 </label>
                 <input
@@ -198,7 +239,7 @@ export function Contact() {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-white mb-2">
                   Message *
                 </label>
                 <textarea
@@ -215,7 +256,7 @@ export function Contact() {
 
               <button
                 type="submit"
-                className="btn-primary w-full sm:w-auto"
+                className="btn-primary w-full justify-center"
               >
                 <Send className="h-4 w-4" />
                 Send Message

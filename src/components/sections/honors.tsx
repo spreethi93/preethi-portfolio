@@ -8,7 +8,7 @@ export function Honors() {
   if (!honors || honors.length === 0) return null
 
   return (
-    <section className="section-sm bg-slate-50 dark:bg-slate-900/50">
+    <section id="honors" className="section min-h-[calc(100vh-4rem)] snap-start bg-slate-50 dark:bg-slate-900/50 overflow-y-auto">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

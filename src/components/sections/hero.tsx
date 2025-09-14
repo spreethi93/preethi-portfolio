@@ -1,6 +1,6 @@
 "use client";
 
-import { Download, ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { Download, Github, Linkedin, Mail } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { personalInfo, contactInfo } from "@/data/portfolio";
@@ -59,7 +59,7 @@ export function Hero() {
   return (
     <section
       id="about"
-      className="section min-h-screen flex items-center justify-center relative overflow-hidden"
+      className="section min-h-[calc(100vh-4rem)] snap-start flex items-center justify-center relative overflow-hidden"
     >
       {/* Modern background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/30 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900"></div>
@@ -219,13 +219,13 @@ export function Hero() {
                 >
                   <a
                     href={`mailto:${contactInfo.email}`}
-                    className="relative inline-block"
+                    className="relative inline-block group"
                     aria-label="Email"
                   >
                     <span className="absolute -inset-1 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 opacity-80 pointer-events-none"></span>
                     <span
                       style={{ padding: "8px 8px" }}
-                      className="relative z-10 p-6 rounded-full bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 hover:bg-blue-50 dark:hover:bg-blue-900/30 flex items-center justify-center"
+                      className="relative z-10 p-6 rounded-full bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm shadow-lg transition-transform duration-300 transform-gpu group-hover:scale-110 hover:bg-blue-50 dark:hover:bg-blue-900/30 flex items-center justify-center"
                     >
                       <Mail className="h-5 w-5 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400" />
                     </span>
@@ -234,13 +234,13 @@ export function Hero() {
                     href={contactInfo.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="relative inline-block"
+                    className="relative inline-block group"
                     aria-label="LinkedIn"
                   >
                     <span className="absolute -inset-1 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 opacity-80 pointer-events-none"></span>
                     <span
                       style={{ padding: "8px 8px" }}
-                      className="relative z-10 p-6 rounded-full bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 hover:bg-blue-50 dark:hover:bg-blue-900/30 flex items-center justify-center"
+                      className="relative z-10 p-6 rounded-full bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm shadow-lg transition-transform duration-300 transform-gpu group-hover:scale-110 hover:bg-blue-50 dark:hover:bg-blue-900/30 flex items-center justify-center"
                     >
                       <Linkedin className="h-5 w-5 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400" />
                     </span>
@@ -249,13 +249,13 @@ export function Hero() {
                     href={contactInfo.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="relative inline-block"
+                    className="relative inline-block group"
                     aria-label="GitHub"
                   >
                     <span className="absolute -inset-1 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 opacity-80 pointer-events-none"></span>
                     <span
                       style={{ padding: "8px 8px" }}
-                      className="relative z-10 p-6 rounded-full bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 hover:bg-blue-50 dark:hover:bg-blue-900/30 flex items-center justify-center"
+                      className="relative z-10 p-6 rounded-full bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm shadow-lg transition-transform duration-300 transform-gpu group-hover:scale-110 hover:bg-blue-50 dark:hover:bg-blue-900/30 flex items-center justify-center"
                     >
                       <Github className="h-5 w-5 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400" />
                     </span>
