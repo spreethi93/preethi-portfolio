@@ -64,21 +64,8 @@ export const skills: Skills = {
     { name: "Jenkins", svg: "jenkins.svg" },
     { name: "Jira", svg: "jira.svg" }
   ],
-  // "Design & Collaboration": [
-  //   { name: "Figma", svg: "figma.svg" },
-  //   { name: "Invision", svg: "invision.svg" },
-  //   { name: "UI/UX Design", svg: "ui-ux.svg" },
-  //   { name: "Agile/Scrum", svg: "agile-scrum.svg" }
-  // ],
-  // "Leadership": [
-  //   { name: "Mentoring", svg: "mentoring.svg" },
-  //   { name: "Agile Practices", svg: "agile-scrum.svg" },
-  //   { name: "Cross-functional Collaboration", svg: "cross-functional-collaboration.svg" },
-  //   { name: "Code Standards", svg: "modular-components.svg" },
-  //   { name: "Project Planning", svg: "project-planning.svg" },
-  //   { name: "Stakeholder Communication", svg: "stakeholder-communication.svg" },
-  //   { name: "Technical Decision Making", svg: "decision-making.svg" }
-  // ]
+  "Design & Collaboration": [],
+  "Leadership": []
 }
 
 export const experiences: Experience[] = [
