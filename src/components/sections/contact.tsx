@@ -128,7 +128,7 @@ export function Contact() {
             {/* Social Links */}
             <div className="mt-8">
               <h4 className="font-semibold text-slate-900 dark:text-white mb-4">Connect with me</h4>
-              <div className="flex gap-4">
+              <div className="flex gap-8">
                 <a
                   href={contactInfo.linkedin}
                   target="_blank"

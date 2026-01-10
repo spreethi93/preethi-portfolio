@@ -6,10 +6,10 @@ import { useState, useEffect } from "react";
 import { personalInfo, contactInfo } from "@/data/portfolio";
 
 const SUBTITLES = [
-  "Frontend Technical Lead",
+  "Staff Software Engineer",
   "Micro-Frontend Architect",
   "AI-Augmented Engineer",
-  "Tech Innovator",
+  "Technical Lead",
 ];
 
 export function Hero() {
@@ -122,7 +122,7 @@ export function Hero() {
                   </div>
                   {/* Tech Stack Section */}
                   <div className="flex flex-wrap justify-start gap-4 mt-6 mb-2 pl-1">
-                    {["React", "Typescript", "Javascript", "System Design"].map(
+                    {["React", "Typescript", "Javascript", "System design"].map(
                       (tech) => (
                         <div key={tech} className="relative">
                           <div className="absolute -inset-1 rounded-xl bg-gradient-to-br from-blue-400/40 via-purple-400/30 to-pink-400/30 opacity-40 pointer-events-none"></div>
@@ -162,7 +162,7 @@ export function Hero() {
                     </div>
                     <div className="text-center">
                       <div className="text-3xl md:text-4xl font-bold text-blue-400 mb-2">
-                        67K+
+                        75K+
                       </div>
                       <div className="text-sm text-gray-400">
                         Customers Served
@@ -187,20 +187,20 @@ export function Hero() {
                 >
                   <div className="relative inline-block">
                     <div className="absolute -inset-1 rounded-xl bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 opacity-75 pointer-events-none"></div>
-                    <button
-                      onClick={() => scrollToSection("#contact")}
-                      className="relative block w-auto px-8 py-2 rounded-xl bg-blue-50 dark:bg-blue-900/40 shadow-lg hover:shadow-xl font-semibold text-blue-800 dark:text-blue-100 text-base md:text-lg transition-all duration-200 cursor-pointer select-none tracking-wide text-center border border-transparent"
+                    <a
+                      href="#contact"
+                      className="relative block w-auto px-8 py-2 rounded-xl btn-hero shadow-lg hover:shadow-xl font-semibold text-blue-100 dark:text-blue-100 text-base md:text-lg transition-all duration-200 cursor-pointer select-none tracking-wide text-center border border-transparent"
                       style={{ padding: "10px 8px" }}
                     >
                       Get In Touch
-                    </button>
+                    </a>
                   </div>
                   <div className="relative inline-block">
                     <div className="absolute -inset-1 rounded-xl bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 opacity-75 pointer-events-none"></div>
                     <a
                       href={personalInfo.resumeUrl}
                       download
-                      className="relative block w-auto px-8 py-2 rounded-xl bg-white/90 dark:bg-slate-900/80 shadow-lg hover:shadow-xl font-semibold text-blue-800 dark:text-blue-100 text-base md:text-lg transition-all duration-200 cursor-pointer select-none tracking-wide text-center border border-transparent"
+                      className="relative block w-auto px-8 py-2 rounded-xl btn-hero shadow-lg hover:shadow-xl font-semibold text-blue-100 dark:text-blue-100 text-base md:text-lg transition-all duration-200 cursor-pointer select-none tracking-wide text-center border border-transparent"
                       style={{ padding: "8px 8px" }}
                     >
                       <span className="inline-flex items-center gap-2 justify-center w-full">
@@ -215,7 +215,7 @@ export function Hero() {
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.8 }}
-                  className="flex justify-center lg:justify-start gap-8"
+                  className="flex justify-center lg:justify-start gap-8 mt-4"
                 >
                   <a
                     href={`mailto:${contactInfo.email}`}

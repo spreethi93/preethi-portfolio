@@ -11,7 +11,7 @@ import {
 
 export const personalInfo: PersonalInfo = {
   name: "Preethi Sathiyanarayanan",
-  title: "Lead Software Engineer",
+  title: "Staff Software Engineer",
   summary: "Frontend Technical Lead with 9+ years of experience architecting scalable, accessible (WCAG 2.1), highly performant & user-centric web applications using modern technologies to solve enterprise-level SaaS product(B2C, B2B) needs. Proven expertise in React (v18), TypeScript, modular architecture, and micro-frontends. Strategic problem-solver with strong mentoring, business goal alignment, and stakeholder collaboration across cross-functional teams. Experienced in performance optimisation, CI/CD integration, and leading technical transformations. Looking to drive frontend excellence in an innovative product environment.",
   photo: "/assets/images/preethi-sathiyanarayanan.jpg",
   resumeUrl: "/resume.pdf"
@@ -30,6 +30,7 @@ export const skills: Skills = {
     { name: "Tailwind CSS", svg: "tailwind.svg" },
     { name: "Accessibility", svg: "accessibility.svg" },
     { name: "RTL", svg: "testing-methodologies.svg" },
+    { name: "Figma", svg: "figma.svg" },
   ],
   "Backend & APIs": [
     { name: "RoR", svg: "rails.svg" },
@@ -40,32 +41,30 @@ export const skills: Skills = {
   "Performance & Monitoring": [
     { name: "Lighthouse", svg: "lighthouse-svgrepo-com.svg" },
     { name: "Web Vitals", svg: "monitoring.svg" },
-    { name: "Performance Optimization", svg: "performance-optimisation.svg" },
-    { name: "Page Speed Optimisation", svg: "page-speed-optimisation.svg" },
-    { name: "Chrome DevTools", svg: "chrome-devtools.svg" },
-    { name: "Code Splitting", svg: "code-splitting.svg" },
+    { name: "Performance optimization", svg: "performance-optimisation.svg" },
+    { name: "Page speed optimisation", svg: "page-speed-optimisation.svg" },
+    { name: "Chrome devTools", svg: "chrome-devtools.svg" },
+    { name: "Code splitting", svg: "code-splitting.svg" },
     { name: "Monitoring", svg: "monitoring.svg" },
     { name: "Sentry", svg: "sentry.svg" },
     { name: "Apdex", svg: "apdex.svg" }
   ],
   "Architecture/Strategy": [
     { name: "Micro-frontends", svg: "micro-frontend-architecture.svg" },
-    { name: "Modular Architecture", svg: "modular-components.svg" },
-    { name: "System Design", svg: "design-systems.svg" },
+    { name: "Modular architecture", svg: "modular-components.svg" },
+    { name: "System design", svg: "design-systems.svg" },
     { name: "Microservices", svg: "modular-components.svg" },
     { name: "AI and MCP for FE", svg: "ai.svg" }
   ],
   "DevOps & Tooling": [
     { name: "CI/CD", svg: "jenkins.svg" },
     { name: "Git", svg: "git.svg" },
-    { name: "GitHub Actions", svg: "github-actions.svg" },
+    { name: "GitHub actions", svg: "github-actions.svg" },
     { name: "Postman", svg: "postman.svg" },
     { name: "Vercel", svg: "vercel.svg" },
     { name: "Jenkins", svg: "jenkins.svg" },
     { name: "Jira", svg: "jira.svg" }
   ],
-  "Design & Collaboration": [],
-  "Leadership": []
 }
 
 export const experiences: Experience[] = [
@@ -80,7 +79,7 @@ export const experiences: Experience[] = [
     productDescription: "Freshservice unifies IT services, assets, and operations on one intuitive platform, boosting employee support, driving agent productivity, and lowering total cost of ownership.",
     techStack: ["React", "TypeScript", "JavaScript", "Ember", "MFE architecture", "Accessibility", "Performance Optimization"],
     points: [
-      "Architected and led frontend development of Freshservice SPA (67k+ customers) using React, TypeScript, JavaScript, and micro-frontend architecture for modular scalability in a DevSecOps culture.",
+      "Architected and led frontend development of Freshservice SPA (75k+ customers) using React, TypeScript, JavaScript, and micro-frontend architecture for modular scalability in a DevSecOps culture.",
       "Mentored 10+ engineers across squads, conducted PR code reviews, and defined application codebase quality by implementing robust CI checks(used every day by 400 engineers) for accessibility (A11y), security benchmarks, linting, unit test coverage(90%), build size monitoring, Storybook documenting, and SVG optimizations etc.",
       "Scaled engineering velocity by 20% across 3 revenue-generating products by building reusable components for the UI component libraries.",
       "Strengthened platform security by mitigating 200+ vulnerabilities, including XSS, CSRF, and other attack vectors. Conducted regular security audits to detect and address risks, ensuring application compliance with modern security standards",

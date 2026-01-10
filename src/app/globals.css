@@ -244,6 +244,16 @@ html {
   transform: translateY(-2px);
 }
 
+/* Themed hero buttons using OKLab mixing */
+.btn-hero {
+  /* Tailwind slate-900: #0f172a */
+  background-color: color-mix(in oklab, #0f172a 80%, transparent);
+}
+.btn-hero:hover {
+  /* Tailwind blue-900: #1e3a8a */
+  background-color: color-mix(in oklab, #1e3a8a 40%, transparent);
+}
+
 /* Typography */
 .text-gradient {
   background: linear-gradient(135deg, var(--gradient-from), var(--gradient-to));

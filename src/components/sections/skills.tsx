@@ -42,13 +42,13 @@ export function Skills() {
       <div className="absolute top-20 left-20 w-96 h-96 bg-blue-200/20 dark:bg-blue-900/20 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-60 animate-float"></div>
       <div className="absolute bottom-20 right-20 w-80 h-80 bg-purple-200/20 dark:bg-purple-900/20 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-60 animate-float" style={{animationDelay: '2s'}}></div>
       <div className="relative z-10 flex justify-center">
-        <div className="w-full">
+        <div className="w-full" style={{ margin: '0 100px' }}>
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-bold">
               <span className="text-gradient">Skills Summary</span>
             </h2>
           </div>
-          <div className="h-8 md:h-8"></div>
+          <div className="h-16 md:h-16"></div>
           <div className="flex flex-col gap-y-12">
             {Object.entries(skills).map(([category, skillList], idx) => (
               <motion.div
@@ -66,7 +66,7 @@ export function Skills() {
                   </h3>
                 </div>
                 {/* Skills Grid */}
-                <div className="flex flex-wrap gap-3">
+                <div className="flex flex-wrap gap-6">
                   {skillList.map((skill: Skill) => (
                     <div
                       key={skill.name}

@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
-import { ThemeToggle } from "@/components/ui/theme-toggle"
 import { cn } from "@/lib/utils"
 
 const navigation = [
@@ -65,9 +64,8 @@ export function Header() {
             </div>
           </div>
 
-          {/* Theme Toggle & Mobile Menu Button */}
+          {/* Mobile Menu Button */}
           <div className="flex items-center space-x-4">
-            <ThemeToggle />
             <div className="md:hidden">
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
