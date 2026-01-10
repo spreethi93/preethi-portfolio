@@ -69,6 +69,4 @@ export interface Skills {
   "Performance & Monitoring": Skill[];
   "Architecture/Strategy": Skill[];
   "DevOps & Tooling": Skill[];
-  "Design & Collaboration": Skill[];
-  "Leadership": Skill[];
 }

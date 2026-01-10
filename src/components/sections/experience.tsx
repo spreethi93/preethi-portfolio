@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { MapPin, Calendar, Building2 } from "lucide-react"
+import Image from "next/image"
 import { experiences } from "@/data/portfolio"
 
 export function Experience() {
@@ -42,7 +43,7 @@ export function Experience() {
               <div className="flex items-start gap-5 mb-5">
                 <div className="w-20 h-20 rounded-xl bg-white dark:bg-slate-800 border border-blue-200/60 dark:border-blue-800/60 flex items-center justify-center shadow-md overflow-hidden flex-shrink-0">
                   {item.logo ? (
-                    <img src={item.logo} alt={`${item.company} logo`} className="w-14 h-14 object-contain" />
+                    <Image src={item.logo} alt={`${item.company} logo`} width={56} height={56} className="w-14 h-14 object-contain" />
                   ) : (
                     <Building2 className="h-7 w-7 text-blue-600 dark:text-blue-400" />
                   )}

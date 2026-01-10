@@ -4,6 +4,7 @@ import { Download, Github, Linkedin, Mail } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { personalInfo, contactInfo } from "@/data/portfolio";
+import Image from "next/image";
 
 const SUBTITLES = [
   "Staff Software Engineer",
@@ -49,12 +50,7 @@ export function Hero() {
     }
   }, [displayText, isTyping, currentSubtitleIndex]);
 
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  // smooth scroll handled by anchor + CSS scroll-behavior
 
   return (
     <section
@@ -85,10 +81,12 @@ export function Hero() {
                 {/* Gradient border with glow effect */}
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 rounded-full animate-pulse opacity-75"></div>
                 <div className="absolute inset-2 bg-white dark:bg-slate-800 rounded-full overflow-hidden shadow-2xl">
-                  <img
+                  <Image
                     src="/assets/images/preethi-sathiyanarayanan.jpg"
                     alt="Preethi Sathiyanarayanan"
-                    className="w-full h-full object-cover filter brightness-110 contrast-110"
+                    fill
+                    className="object-cover filter brightness-110 contrast-110"
+                    sizes="(max-width: 1024px) 20rem, 26rem"
                   />
                   {/* Subtle overlay for blending */}
                   <div className="absolute inset-0 bg-gradient-to-t from-blue-900/10 via-transparent to-purple-900/10"></div>

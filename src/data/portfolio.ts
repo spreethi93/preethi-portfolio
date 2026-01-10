@@ -64,7 +64,7 @@ export const skills: Skills = {
     { name: "Vercel", svg: "vercel.svg" },
     { name: "Jenkins", svg: "jenkins.svg" },
     { name: "Jira", svg: "jira.svg" }
-  ],
+  ]
 }
 
 export const experiences: Experience[] = [
