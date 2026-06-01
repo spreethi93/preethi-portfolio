@@ -38,10 +38,10 @@ export const skills: Skills = {
     { name: "REST API", svg: "rest-api.svg" },
     { name: "MySQL", svg: "mysql.svg" }
   ],
-  "AI and MCP for FE": [
+  "AI and MCP": [
     { name: "AI", svg: "ai.svg" },
     { name: "MCP", svg: "mcp.svg" },
-    { name: "AI agent", svg: "ai-agent.svg" },
+    { name: "AI agentic workflows", svg: "ai-agent.svg" },
   ],
   "Performance & Monitoring": [
     { name: "Lighthouse", svg: "lighthouse-svgrepo-com.svg" },

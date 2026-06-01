@@ -66,7 +66,7 @@ export interface Skill {
 export interface Skills {
   "Frontend Web Technologies": Skill[];
   "Backend & APIs": Skill[];
-  "AI and MCP for FE": Skill[];
+  "AI and MCP": Skill[];
   "Performance & Monitoring": Skill[];
   "Architecture/Strategy": Skill[];
   "DevOps & Tooling": Skill[];
