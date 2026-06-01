@@ -8,8 +8,8 @@ import Image from "next/image";
 
 const SUBTITLES = [
   "Staff Software Engineer",
-  "Micro-Frontend Architect",
   "AI-Augmented Engineer",
+  "Micro-Frontend Architect",
   "Technical Lead",
 ];
 
@@ -120,7 +120,7 @@ export function Hero() {
                   </div>
                   {/* Tech Stack Section */}
                   <div className="flex flex-wrap justify-start gap-4 mt-6 mb-2 pl-1">
-                    {["React", "Typescript", "Javascript", "System design"].map(
+                    {["React", "Typescript", "Javascript", "System design", "AI Flows", "MCP"].map(
                       (tech) => (
                         <div key={tech} className="relative">
                           <div className="absolute -inset-1 rounded-xl bg-gradient-to-br from-blue-400/40 via-purple-400/30 to-pink-400/30 opacity-40 pointer-events-none"></div>

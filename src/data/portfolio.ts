@@ -38,6 +38,11 @@ export const skills: Skills = {
     { name: "REST API", svg: "rest-api.svg" },
     { name: "MySQL", svg: "mysql.svg" }
   ],
+  "AI and MCP for FE": [
+    { name: "AI", svg: "ai.svg" },
+    { name: "MCP", svg: "mcp.svg" },
+    { name: "AI agent", svg: "ai-agent.svg" },
+  ],
   "Performance & Monitoring": [
     { name: "Lighthouse", svg: "lighthouse-svgrepo-com.svg" },
     { name: "Web Vitals", svg: "monitoring.svg" },
@@ -70,7 +75,7 @@ export const skills: Skills = {
 export const experiences: Experience[] = [
   {
     company: "Freshworks",
-    position: "Lead Frontend Engineer,",
+    position: "Staff Software Engineer,",
     duration: "Jun 2017 - Present",
     location: "Chennai, India",
     product: "Freshservice",
