@@ -35,6 +35,7 @@ export const skills: Skills = {
   "Backend & APIs": [
     { name: "RoR", svg: "rails.svg" },
     { name: "Java", svg: "java.svg" },
+    { name: "Node.js", svg: "nodejs.svg" },
     { name: "REST API", svg: "rest-api.svg" },
     { name: "MySQL", svg: "mysql.svg" }
   ],
